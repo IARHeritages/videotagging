@@ -59,6 +59,8 @@ For using the script, you will need an API key from Google. Go to your Google AP
 
 **NOTE**: There's a template of the settings file named settings.py.tmpl. Just make a copy of this file, rename it to *settings.py* and update its content with your API key.
 
+**WARNING**: Be sure that you have enabled the API KEY to use the Youtube API. Go to your Library within the Google API Console, and enable it.
+
 The previous command can be run like this:
 
 ```
