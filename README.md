@@ -1,7 +1,7 @@
 # videotagging
 Crowdsourcing application to ag video content relevant to IARH 
 
-First you will need to install all the dependencies with the following commands:
+First you will need to install all the dependencies with the following commands (be sure that you are in the project folder videotagging):
 
 ```bash
 
