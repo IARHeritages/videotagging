@@ -130,53 +130,7 @@
 </div><!-- End of Skeleton Row -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="/static/js/pybossa/pybossa-player.min.js"></script>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    function loadDisqus() {
-    $("#disqus_thread").toggle();
-    $(".btn-disqus").toggle();
-    var disqus_shortname = 'pybossa'; // required: replace example with your forum shortname
-    //var disqus_identifier = taskId;
-    var disqus_developer = 1;
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    }
-
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
 <script>
-
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length,c.length);
-        }
-    }
-    return "";
-}
-
-
 // Default language
 var userLocale = "en";
 // Translations
@@ -234,13 +188,6 @@ function i18n_translate() {
 
 function loadUserProgress() {
     pybossa.userProgress('video').done(function(data){
-        var cookie = getCookie("understoodbtn");
-        if (cookie === "") {
-            if (data.done >= 2) {
-                setCookie("understoodbtn", "yes", 30);
-            }
-        }
-
         if (data.done === 1 ) {
             $('#survey').modal('show');
         }
@@ -256,7 +203,6 @@ pybossa.taskLoaded(function(task, deferred) {
             'custom': [],
             'comments': ''
         }
-        task.submit = false;
        deferred.resolve(task);
     }
     else {
@@ -271,9 +217,6 @@ function resetStyles(task) {
     $(".btn-submit").hide();
 }
 
-
-function buildSummary(task) {
-}
 
 function deleteItem(task, key, item) {
     var index = task.answer[key].indexOf(item);
@@ -305,7 +248,7 @@ function toggleBtn(btn, task) {
     if ($(btn).hasClass('active')) {
         $(btn).removeClass('active');
         deleteItem(task, key, answer);
-        console.log(task.answer);
+        //console.log(task.answer);
         if (key === 'custom') {
             $(btn).remove();
         }
@@ -313,7 +256,7 @@ function toggleBtn(btn, task) {
     else {
         $(btn).addClass('active');
         task.answer[key].push(answer);
-        console.log(task.answer);
+        //console.log(task.answer);
     }
 
     toggleSubmit(task);
@@ -322,7 +265,6 @@ function toggleBtn(btn, task) {
 
 pybossa.presentTask(function(task, deferred) {
     if ( !$.isEmptyObject(task) ) {
-        console.log(task.showunderstood);
         loadUserProgress();
         //i18n_translate();
         resetStyles(task);
@@ -364,7 +306,7 @@ pybossa.presentTask(function(task, deferred) {
         $("#tags").on("change paste keyup", _.debounce(lazyLoad, 1000));
         $("#comments").on("change paste keyup", function(){
             task.answer.comments = $(this).val();
-            console.log(task.answer);
+            //console.log(task.answer);
         });
 
         $('.btn.btn-submit').off('click').on('click', function(evt) {
