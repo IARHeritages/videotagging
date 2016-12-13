@@ -58,9 +58,11 @@ First of all, we would to run the command **create_json_video.py** as it will al
 The previous command can be run like this:
 
 ```
-python create_json_video.py --query="your query keywords"
+python create_json_video.py --query="your query keywords" --output=videos.json
 
 ```
+
+The **--output=filename.json** flag allows you to save your query into different files. If you don't use the flag, it will be saved to **videos.json**.
 
 You can see all the available options by using the flag **--help**.
 
@@ -73,7 +75,7 @@ For using the script, you will need an API key from Google. Go to your Google AP
 Then, you can use the command line tool to import a the JSON file with tasks for your project:
 
 ```
-pbs --credentials micropasts add_tasks --tasks-file=videos.json--tasks-type=json
+pbs --credentials micropasts add_tasks --tasks-file=videos.json --tasks-type=json
 
 ```
 
