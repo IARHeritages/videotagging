@@ -57,7 +57,7 @@ First of all, we would to run the command **create_json_video.py** as it will al
 
 For using the script, you will need an API key from Google. Go to your Google API Console and create a key. Then, copy it, and paste it in the file settings.py, in the section GOOGLE_APIKEY. 
 
-**NOTE**: There's a template of the settings file named settings.py.tmpl
+**NOTE**: There's a template of the settings file named settings.py.tmpl. Just make a copy of this file, rename it to *settings.py* and update its content with your API key.
 
 The previous command can be run like this:
 
