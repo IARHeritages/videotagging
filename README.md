@@ -62,6 +62,8 @@ python create_json_video.py --query="your query keywords"
 
 ```
 
+You can see all the available options by using the flag **--help**.
+
 This will create a file with several videos. Be careful, as some searches could be very big.
 
 For using the script, you will need an API key from Google. Go to your Google API Console and create a key. Then, copy it, and paste it in the file settings.py, in the section GOOGLE_APIKEY. 
