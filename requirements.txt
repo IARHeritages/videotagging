@@ -1,0 +1,2 @@
+pybossa-pbs
+google-api-python-client
