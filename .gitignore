@@ -1,0 +1,4 @@
+env/*
+*.un~
+*.pyc
+settings.py
