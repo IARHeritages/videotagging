@@ -27,7 +27,7 @@
 </div><!-- /.modal -->
 
 
-<!-- Success and Error Messages for the user --> 
+<!-- Success and Error Messages for the user -->
 <div class="row">
     <div class="col-md-6 col-md-offset-2" style="height:50px">
         <!-- SUCCESS message for the user -->
@@ -74,7 +74,7 @@
         <button class="btn btn-sm btn-default btn-tag" value="multiculturalism">Multiculturalism</button>
         <button class="btn btn-sm btn-default btn-tag" value="mobility">Mobility</button>
         <button class="btn btn-sm btn-default btn-tag" value="inmigration">inmigration</button>
-        <button class="btn btn-sm btn-default btn-tag" value="borders">boders</button>
+        <button class="btn btn-sm btn-default btn-tag" value="borders">borders</button>
         <button class="btn btn-sm btn-default btn-tag" value="religion">religion</button>
         <button class="btn btn-sm btn-default btn-tag" value="spiritualism">spiritualism</button>
         <button class="btn btn-sm btn-default btn-tag" value="brexit">brexit</button>
@@ -109,7 +109,7 @@
         <button class="btn btn-sm btn-default btn-tag" value="europe">europe</button>
         </div>
 
-        <h3>Yours (comma separated)</h3>
+        <h3>Your own tags (comma separated)</h3>
         <input id="tags" type="text" name="tags">
         <div id="custom" style="margin-top:5px;">
         </div>
@@ -124,7 +124,7 @@
        <button class="btn btn-success btn-lg btn-submit pull-left" style="display:none;">Submit</button>
        <a href="../tutorial" class="btn btn-primary pull-right" style="margin-bottom:10px;margin-left: 5px; ">Tutorial</a>
        <a href="//community.micropasts.org/category/crowdsourcing-support" class="btn btn-info pull-right" style="margin-bottom:10px;margin-left: 5px; ">Community Help</a>
- 
+
     </div><!-- End of Photo DIV (columnt) -->
 </div><!-- End of Skeleton Row -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
@@ -270,7 +270,7 @@ pybossa.presentTask(function(task, deferred) {
         $('#task-id').html(task.id);
 
         var player = PybossaPlayer(task.info.video_url, 'video-clip');
-        
+
             player.onReady(function() {
                     console.log("Video ready")
             });

@@ -2,3 +2,4 @@ env/*
 *.un~
 *.pyc
 settings.py
+.idea/*
