@@ -5,7 +5,8 @@ This digital heritage research is part of the project ['Ancient Identities in Mo
 What the research team would like people to do, is to watch the short videos that are showed, and add tags that describe featured topics, people and periods. All videos are shorter than four minutes; they were uploaded in the year 2016, and searched using the keywords 'Roman Empire' and 'Britain'.
 
 **This project is on behalf of:**
+
 [![The UCL Institute of Archaeology](http://micropasts.org/wp-content/uploads/2014/09/UCL_logo_sm_blk-e1481812374426.png)](http://www.ucl.ac.uk/archaeology)  [![Durham University](http://micropasts.org/wp-content/uploads/2016/12/durham-e1481812291124.png)](https://www.dur.ac.uk/archaeology/)  [![IARH Project](http://micropasts.org/wp-content/uploads/2016/12/Screen-Shot-2016-12-14-at-10.33.51-2-e1481812350458.png)](http://www.ucl.ac.uk/archaeology/research/directory/ironage-roman-heritages)
 
-**Find the code on GitHub:**
+**Find the code on:**
 [![GitHub](http://micropasts.org/wp-content/uploads/2016/12/GitHub-2-e1481812720446.jpg)](https://github.com/IARHeritages)
