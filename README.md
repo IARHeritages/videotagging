@@ -1,4 +1,4 @@
-# videotagging
+# Videotagging
 Crowdsourcing application to tag short YouTube videos (>4 minutes) relevant to 'Roman Empire' and 'Britain'. All the videos were published in the year 2016.
 
 First you will need to install all the dependencies with the following commands (be sure that you are in the project folder videotagging):
