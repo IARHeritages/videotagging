@@ -6,7 +6,8 @@ What the research team would like people to do, is to watch the short videos tha
 
 **This project is on behalf of:**
 
-[![The UCL Institute of Archaeology](http://micropasts.org/wp-content/uploads/2014/09/UCL_logo_sm_blk-e1481812374426.png)](http://www.ucl.ac.uk/archaeology) [![Durham University](http://micropasts.org/wp-content/uploads/2016/12/durham-e1481812291124.png)](https://www.dur.ac.uk/archaeology/) [![IARH Project](http://micropasts.org/wp-content/uploads/2016/12/Screen-Shot-2016-12-14-at-10.33.51-2-e1481812350458.png)](http://www.ucl.ac.uk/archaeology/research/directory/ironage-roman-heritages)
+[![The UCL Institute of Archaeology](http://micropasts.org/wp-content/uploads/2014/09/UCL_logo_sm_blk-e1481812374426.png)](http://www.ucl.ac.uk/archaeology)      [![Durham University](http://micropasts.org/wp-content/uploads/2016/12/durham-e1481812291124.png)](https://www.dur.ac.uk/archaeology/)      [![IARH Project](http://micropasts.org/wp-content/uploads/2016/12/Screen-Shot-2016-12-14-at-10.33.51-2-e1481812350458.png)](http://www.ucl.ac.uk/archaeology/research/directory/ironage-roman-heritages)
 
 **[Find the code on GitHub](https://github.com/IARHeritages)**
+
 ![GitHub](http://micropasts.org/wp-content/uploads/2016/12/GitHub-2-e1481812720446.jpg)
