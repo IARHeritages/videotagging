@@ -105,14 +105,6 @@
         <button class="btn btn-sm btn-default btn-tag" value="medieval">Medieval</button>
         </div>
 
-        <h3><b>Activities</b></h3>
-        <div id="countriesRegions">
-        <button class="btn btn-sm btn-default btn-tag" value="research">Research</button>
-        <button class="btn btn-sm btn-default btn-tag" value="education">Education</button>
-        <button class="btn btn-sm btn-default btn-tag" value="re-enactment">Re-enactment</button>
-        <button class="btn btn-sm btn-default btn-tag" value="politics">Political activism</button>
-        </div>
-
         <h3><b>Countries and Regions</b></h3>
         <div id="countriesRegions">
         <button class="btn btn-sm btn-default btn-tag" value="uk">UK</button>
@@ -124,6 +116,7 @@
         <input id="tags" type="text" name="tags">
         <div id="custom" style="margin-top:5px;">
         </div>
+
 
         <h4>Any comments?</h4>
         <textarea id="comments" rows="4" cols="45"></textarea>
@@ -209,7 +202,6 @@ pybossa.taskLoaded(function(task, deferred) {
         task.answer = {'topics': [],
             'people': [],
             'periods': [],
-            'activities': [],
             'countriesRegions': [],
             'custom': [],
             'comments': ''
