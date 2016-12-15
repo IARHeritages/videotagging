@@ -72,44 +72,55 @@
         <h3>Topics</h3>
         <div id="topics">
         <button class="btn btn-sm btn-default btn-tag" value="multiculturalism">Multiculturalism</button>
-        <button class="btn btn-sm btn-default btn-tag" value="mobility">Mobility</button>
-        <button class="btn btn-sm btn-default btn-tag" value="inmigration">inmigration</button>
-        <button class="btn btn-sm btn-default btn-tag" value="borders">borders</button>
-        <button class="btn btn-sm btn-default btn-tag" value="religion">religion</button>
-        <button class="btn btn-sm btn-default btn-tag" value="spiritualism">spiritualism</button>
-        <button class="btn btn-sm btn-default btn-tag" value="brexit">brexit</button>
-        <button class="btn btn-sm btn-default btn-tag" value="elections">elections</button>
-        <button class="btn btn-sm btn-default btn-tag" value="referendum">referendum</button>
-        <button class="btn btn-sm btn-default btn-tag" value="eu">European union</button>
-        </div>
+        <button class="btn btn-sm btn-default btn-tag" value="migration">Migration</button>
+        <button class="btn btn-sm btn-default btn-tag" value="borders">Borders</button>
+        <button class="btn btn-sm btn-default btn-tag" value="religion">Religion</button>
+        <button class="btn btn-sm btn-default btn-tag" value="spiritualism">Spiritualism</button>
+        <button class="btn btn-sm btn-default btn-tag" value="brexit">Brexit</button>
+        <button class="btn btn-sm btn-default btn-tag" value="elections">Elections</button>
+        <button class="btn btn-sm btn-default btn-tag" value="referendum">Referendum</button>
+        <button class="btn btn-sm btn-default btn-tag" value="eu">European Union</button>
+        <button class="btn btn-sm btn-default btn-tag" value="economy">Economy</button>
+        <button class="btn btn-sm btn-default btn-tag" value="conflict">Armed conflict</button>
+        <button class="btn btn-sm btn-default btn-tag" value="technology">Technology</button>
+</div>
 
         <h3>People</h3>
         <div id="people">
-        <button class="btn btn-sm btn-default btn-tag" value="emperor">emperor</button>
-        <button class="btn btn-sm btn-default btn-tag" value="soldier">soldier</button>
-        <button class="btn btn-sm btn-default btn-tag" value="warrior">warrior</button>
+        <button class="btn btn-sm btn-default btn-tag" value="emperor">Emperor</button>
+        <button class="btn btn-sm btn-default btn-tag" value="soldier">Soldier</button>
+        <button class="btn btn-sm btn-default btn-tag" value="warrior">Warrior</button>
         <button class="btn btn-sm btn-default btn-tag" value="celt">Celt</button>
-        <button class="btn btn-sm btn-default btn-tag" value="barbarian">barbarian</button>
-        <button class="btn btn-sm btn-default btn-tag" value="anglo-saxon">Anglo-saxon</button>
-        <button class="btn btn-sm btn-default btn-tag" value="roman">roman</button>
+        <button class="btn btn-sm btn-default btn-tag" value="barbarian">Barbarian</button>
+        <button class="btn btn-sm btn-default btn-tag" value="anglo-saxon">Anglo-Saxon</button>
+        <button class="btn btn-sm btn-default btn-tag" value="roman">Roman</button>
+        <button class="btn btn-sm btn-default btn-tag" value="roman">Briton</button>
+        <button class="btn btn-sm btn-default btn-tag" value="king">King</button>
         </div>
 
         <h3>Periods</h3>
         <div id="periods">
-        <button class="btn btn-sm btn-default btn-tag" value="roman">roman</button>
-        <button class="btn btn-sm btn-default btn-tag" value="iron-age">iron age</button>
-        <button class="btn btn-sm btn-default btn-tag" value="medieval">medieval</button>
+        <button class="btn btn-sm btn-default btn-tag" value="roman">Roman</button>
+        <button class="btn btn-sm btn-default btn-tag" value="iron-age">Iron age</button>
+        <button class="btn btn-sm btn-default btn-tag" value="medieval">Medieval</button>
+        </div>
+
+        <h3>Activities</h3>
+        <div id="countriesRegions">
+        <button class="btn btn-sm btn-default btn-tag" value="research">Research</button>
+        <button class="btn btn-sm btn-default btn-tag" value="education">Education</button>
+        <button class="btn btn-sm btn-default btn-tag" value="re-enactment">Re-enactment</button>
+        <button class="btn btn-sm btn-default btn-tag" value="politics">Political activism</button>
         </div>
 
         <h3>Countries and Regions</h3>
         <div id="countriesRegions">
         <button class="btn btn-sm btn-default btn-tag" value="uk">UK</button>
-        <button class="btn btn-sm btn-default btn-tag" value="us">US</button>
-        <button class="btn btn-sm btn-default btn-tag" value="north-america">North america</button>
-        <button class="btn btn-sm btn-default btn-tag" value="europe">europe</button>
+        <button class="btn btn-sm btn-default btn-tag" value="otherEU">Other European country</button>
+        <button class="btn btn-sm btn-default btn-tag" value="us">United States</button>
         </div>
 
-        <h3>Your own tags (comma separated)</h3>
+        <h3>Your own tags. Please add them separated by a comma</h3>
         <input id="tags" type="text" name="tags">
         <div id="custom" style="margin-top:5px;">
         </div>
@@ -198,6 +209,7 @@ pybossa.taskLoaded(function(task, deferred) {
         task.answer = {'topics': [],
             'people': [],
             'periods': [],
+            'activities': [],
             'countriesRegions': [],
             'custom': [],
             'comments': ''

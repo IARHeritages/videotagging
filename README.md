@@ -1,5 +1,5 @@
 # videotagging
-Crowdsourcing application to ag video content relevant to IARH 
+Crowdsourcing application to tag short YouTube videos (>4 minutes) relevant to 'Roman Empire' and 'Britain'. All the videos were published in the year 2016.
 
 First you will need to install all the dependencies with the following commands (be sure that you are in the project folder videotagging):
 
@@ -55,7 +55,7 @@ pbs --credentials micropasts update_project --watch
 
 First of all, we would to run the command **create_json_video.py** as it will allow us to search in Youtube for anything, and create a JSON file that we will use later on for creating the tasks.
 
-For using the script, you will need an API key from Google. Go to your Google API Console and create a key. Then, copy it, and paste it in the file settings.py, in the section GOOGLE_APIKEY. 
+For using the script, you will need an API key from Google. Go to your Google API Console and create a key. Then, copy it, and paste it in the file settings.py, in the section GOOGLE_APIKEY.
 
 **NOTE**: There's a template of the settings file named settings.py.tmpl. Just make a copy of this file, rename it to *settings.py* and update its content with your API key.
 
