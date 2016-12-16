@@ -4,8 +4,22 @@
         text-transform: capitalize;
     }
 
+    .btn-tag.periods {
+      background-color: rgba(255, 0, 0, 0.5);
+    }
+
+    .btn-tag:hover,
+    .btn-tag.active {
+      background-color: red;
+    }
+
     h3 {
-        margin-top: 5px;
+        margin-top: 20px;
+    }
+
+    textarea,
+    #tags {
+      width: 100%;
     }
 
 
@@ -83,7 +97,7 @@
         <button class="btn btn-sm btn-default btn-tag" value="economy">Economy</button>
         <button class="btn btn-sm btn-default btn-tag" value="conflict">Armed conflict</button>
         <button class="btn btn-sm btn-default btn-tag" value="technology">Technology</button>
-</div>
+        </div>
 
         <h3><b>People</b></h3>
         <div id="people">
@@ -100,9 +114,9 @@
 
         <h3><b>Periods</b></h3>
         <div id="periods">
-        <button class="btn btn-sm btn-default btn-tag" value="roman">Roman</button>
-        <button class="btn btn-sm btn-default btn-tag" value="iron-age">Iron age</button>
-        <button class="btn btn-sm btn-default btn-tag" value="medieval">Medieval</button>
+        <button class="btn btn-sm btn-default btn-tag periods" value="roman">Roman</button>
+        <button class="btn btn-sm btn-default btn-tag periods" value="iron-age">Iron age</button>
+        <button class="btn btn-sm btn-default btn-tag periods" value="medieval">Medieval</button>
         </div>
 
         <h3><b>Countries and Regions</b></h3>
@@ -119,7 +133,7 @@
 
 
         <h4>Any comments?</h4>
-        <textarea id="comments" rows="4" cols="45"></textarea>
+        <textarea id="comments" rows="4"></textarea>
 
 
     </div><!-- End of Question and Submission DIV (column) -->
