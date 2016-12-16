@@ -8,6 +8,10 @@
       background-color: rgba(255, 97, 56, 0.5);
     }
 
+    .btn-tag.topics.active {
+      background-color: rgba(255, 97, 56, 0.9); color: white
+    }
+
     .btn-tag.people {
       background-color: rgba(255, 255, 157, 0.5);
     }
@@ -18,6 +22,10 @@
 
     .btn-tag.countriesRegions {
       background-color: rgba(121, 189, 143, 0.5);
+    }
+
+    .btn-tag.custom {
+      background-color: rgba(0, 163, 136, 0.5);
     }
 
     h3, h4 {
@@ -129,7 +137,7 @@
         <h3><b>Countries and Regions</b></h3>
         <div id="countriesRegions">
         <button class="btn btn-sm btn-default btn-tag countriesRegions" value="uk">UK</button>
-        <button class="btn btn-sm btn-default btn-tag CcountriesRegions" value="otherEU">Other European country</button>
+        <button class="btn btn-sm btn-default btn-tag countriesRegions" value="otherEU">Other European country</button>
         <button class="btn btn-sm btn-default btn-tag countriesRegions" value="us">United States</button>
         </div>
 
@@ -314,7 +322,7 @@ pybossa.presentTask(function(task, deferred) {
                 if (tags[tag] !== '') {
                     task.answer.custom.push(tags[tag].toLowerCase());
                     var btn = $("<btn/>");
-                    btn.addClass("btn btn-xs btn-default btn-tag active");
+                    btn.addClass("btn btn-xs btn-default btn-tag custom active");
                     btn.val(tags[tag]);
                     btn.text(tags[tag]);
                     btn.css("margin-right", "5px");
