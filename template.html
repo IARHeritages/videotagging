@@ -113,7 +113,7 @@
         <h3><b>Topics</b></h3>
         <div id="topics">
         <button class="btn btn-sm btn-default btn-tag topics" value="multiculturalism">Multiculturalism</button>
-        <button class="btn btn-sm btn-default btn-tag topics" value="migration">Migration</button>
+        <button class="btn btn-sm btn-default btn-tag topics" value="mobility">Mobility</button>
         <button class="btn btn-sm btn-default btn-tag topics" value="borders">Borders</button>
         <button class="btn btn-sm btn-default btn-tag topics" value="religion">Religion</button>
         <button class="btn btn-sm btn-default btn-tag topics" value="spiritualism">Spiritualism</button>
@@ -124,6 +124,14 @@
         <button class="btn btn-sm btn-default btn-tag topics" value="economy">Economy</button>
         <button class="btn btn-sm btn-default btn-tag topics" value="conflict">Armed conflict</button>
         <button class="btn btn-sm btn-default btn-tag topics" value="technology">Technology</button>
+        <button class="btn btn-sm btn-default btn-tag topics" value="civilization">Civilization</button>
+        <button class="btn btn-sm btn-default btn-tag topics" value="collapse">Collapse</button>
+        <button class="btn btn-sm btn-default btn-tag topics" value="christianity">Christianity</button>
+        <button class="btn btn-sm btn-default btn-tag topics" value="invasion">Invasion</button>
+        <button class="btn btn-sm btn-default btn-tag topics" value="empire">Empire</button>
+        <button class="btn btn-sm btn-default btn-tag topics" value="globalisation">Globalisation</button>
+
+
         </div>
 
         <h3><b>People</b></h3>
@@ -135,8 +143,13 @@
         <button class="btn btn-sm btn-default btn-tag people" value="barbarian">Barbarian</button>
         <button class="btn btn-sm btn-default btn-tag people" value="anglo-saxon">Anglo-Saxon</button>
         <button class="btn btn-sm btn-default btn-tag people" value="roman">Roman</button>
-        <button class="btn btn-sm btn-default btn-tag people" value="roman">Briton</button>
+        <button class="btn btn-sm btn-default btn-tag people" value="Briton">Briton</button>
         <button class="btn btn-sm btn-default btn-tag people" value="king">King</button>
+        <button class="btn btn-sm btn-default btn-tag people" value="germanic">Germanic</button>
+        <button class="btn btn-sm btn-default btn-tag people" value="african">African</button>
+       	<button class="btn btn-sm btn-default btn-tag people" value="middleeastern">Middle Eastern</button>
+
+
         </div>
 
         <h3><b>Periods</b></h3>
@@ -144,6 +157,9 @@
         <button class="btn btn-sm btn-default btn-tag periods" value="roman">Roman</button>
         <button class="btn btn-sm btn-default btn-tag periods" value="iron-age">Iron age</button>
         <button class="btn btn-sm btn-default btn-tag periods" value="medieval">Medieval</button>
+        <button class="btn btn-sm btn-default btn-tag periods" value="43">AD43</button>
+        <button class="btn btn-sm btn-default btn-tag periods" value="410">AD410</button>
+		<button class="btn btn-sm btn-default btn-tag periods" value="476">AD476</button>
         </div>
 
         <h3><b>Countries and Regions</b></h3>
@@ -151,6 +167,11 @@
         <button class="btn btn-sm btn-default btn-tag countriesRegions" value="uk">UK</button>
         <button class="btn btn-sm btn-default btn-tag countriesRegions" value="otherEU">Other European country</button>
         <button class="btn btn-sm btn-default btn-tag countriesRegions" value="us">United States</button>
+        <button class="btn btn-sm btn-default btn-tag countriesRegions" value="England">England</button>
+        <button class="btn btn-sm btn-default btn-tag countriesRegions" value="Scotland">Scotland</button>
+        <button class="btn btn-sm btn-default btn-tag countriesRegions" value="Wales">Wales</button>
+        <button class="btn btn-sm btn-default btn-tag countriesRegions" value="northernireland">Northern Ireland</button>
+
         </div>
 
         <h3><b>Your own tags. Please add them separated by a comma</b></h3>
@@ -257,6 +278,7 @@ pybossa.taskLoaded(function(task, deferred) {
 
 function resetStyles(task) {
     $(".btn-tag").removeClass("active");
+    $(".btn-tag.custom").remove() ;
     $("#video-clip").html("");
     $(".btn-submit").hide();
 }
@@ -347,7 +369,7 @@ pybossa.presentTask(function(task, deferred) {
         }
 
 
-        $("#tags").on("change paste keyup", _.debounce(lazyLoad, 1000));
+        $("#tags").on("change paste keyup", _.debounce(lazyLoad, 1500));
         $("#comments").on("change paste keyup", function(){
             task.answer.comments = $(this).val();
             //console.log(task.answer);
