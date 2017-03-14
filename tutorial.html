@@ -1,2 +1,78 @@
-TO BE DONE 
+<div class="row">
+    <div class="col-md-12">
+        <div id="modal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                <h3>How to 'tag' videos about the Roman Empire</h3>
+            </div>
+
+            <!-- Step 1 of the tutorial -->
+            <div id="0" class="modal-body" style="display:none">
+                <p>
+                    Tagging YouTube videos featuring content about the Roman Empire is pretty straightforward.
+                </p>
+                <p>
+                    All we want you to do is to watch the short videos you are presented with (they are up to 4 minutes long) and select the buttons, or 'tags', that best describe the content of the video.
+                </p>
+
+            </div>
+
+            <!-- Step 2 of the tutorial -->
+            <div id="1" class="modal-body" style="display:none">
+                <p>
+                    The video will not play until you ask it to do so. You can add tags while the video is playing and stop the video when you need to do so.
+				<p>
+                    Try to use the tags that are provided first. Then, if you think that other words would also be useful to describe the people, places, periods, and topics featured in the videos, please add your own tags too.
+				</p>
+
+                    If you are not sure about your work or you want to let us know the reasons for some of your choices, you can do so using the comment box. You can also ask us direct questions via the <a href="http://community.micropasts.org/t/support-for-video-tagging-projects/29">community forum</a>.
+                </p>
+
+                <p>
+                    Thank you for participating.
+                </p>
+            </div>
+                    <!-- End of stepped modal body -->
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn btn-default">Previous</a>
+                        <a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-success">Next</a>
+                        <a id="startContrib" data-dismiss="modal" href="../middleEastPostcards/newtask" class="btn btn-primary"
+                           style="display:none"/><i class="glyphicon glyphicon-thumbs-up"></i> Let's start!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var step = -1;
+    function showStep(action) {
+        $("#" + step).hide();
+        if (action == 'next') {
+            step = step + 1;
+        }
+        if (action == 'prev') {
+            step = step - 1;
+        }
+        if (step == 0) {
+            $("#prevBtn").hide();
+        }
+        else {
+            $("#prevBtn").show();
+        }
+        if (step == 1 ) {
+            $("#nextBtn").hide();
+            $("#startContrib").show();
+        }
+        $("#" + step).show();
+    }
+    showStep('next');
+    $("#modal").modal('show');
+</script>
+
 
