@@ -6,8 +6,8 @@ What the research team would like people to do, is to watch the short videos tha
 
 **This project is on behalf of:**
 
-[![IARH Project](http://micropasts.org/wp-content/uploads/2016/12/Screen-Shot-2016-12-14-at-10.33.51-2-e1481815065538.png)](http://www.ucl.ac.uk/archaeology/research/directory/ironage-roman-heritages)
-[![The UCL Institute of Archaeology](http://micropasts.org/wp-content/uploads/2014/09/UCL_logo_sm_blk-e1481812374426.png)](http://www.ucl.ac.uk/archaeology)  [![Durham University](http://micropasts.org/wp-content/uploads/2016/12/durham-e1481815170319.png)](https://www.dur.ac.uk/archaeology/)  
+[![IARH Project](http://ancientidentities.org/wp-content/uploads/2017/01/ai-test.png)](http://www.ucl.ac.uk/archaeology/research/directory/ironage-roman-heritages)
+[![The UCL Institute of Archaeology](http://micropasts.org/wp-content/uploads/2014/09/UCL_logo_sm_blk-e1481812374426.png)](http://www.ucl.ac.uk/archaeology)  [![Durham University](http://ancientidentities.org/wp-content/uploads/2017/03/1280px-Durham_University_logo.svg_-1-e1489503861491.png)](https://www.dur.ac.uk/archaeology/)  
 
 
 **Find the code on:**
